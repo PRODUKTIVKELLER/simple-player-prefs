@@ -7,7 +7,9 @@ namespace Produktivkeller.SimplePlayerPrefs
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Init()
         {
-            if (Application.isConsolePlatform)
+            // On PS4 there is a checkbox for PlayerPrefs support in the player settings.
+            // We use this in combination with the default implementation to reduce complexity on PS4.
+            if (Application.isConsolePlatform && Application.platform is not RuntimePlatform.PS4)
             {
                 return;
             }

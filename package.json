@@ -1,6 +1,6 @@
 {
   "name": "com.produktivkeller.simple-player-prefs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Simple PlayerPrefs",
   "description": "A wrapper for PlayerPrefs to allow different implementations for different platforms.",
   "documentationUrl": "https://github.com/PRODUKTIVKELLER/simple-player-prefs",
